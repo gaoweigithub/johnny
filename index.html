@@ -19,6 +19,8 @@
   <link rel="stylesheet" href="./Free HTML Bootstrap 4 Travel Template_files/mbr-additional.css" type="text/css">
   <link rel="stylesheet" href="./Free HTML Bootstrap 4 Travel Template_files/mobirise/style.css">
 
+
+
 <style type="text/css" id="#jarallax-clip-1">#jarallax-container-1 {
    clip: rect(0 1631px 364.78125px 0);
    clip: rect(0, 1631px, 364.78125px, 0);
@@ -64,16 +66,26 @@
                     2018沖縄駅は始まります</h1>
                 <h3 class="mbr-section-subtitle align-center mbr-light pb-3 mbr-fonts-style display-2">イベントの1ヶ月&nbsp;</h3>
                 <div class="mbr-buttons mbr-buttons--center" align="right">
-                    <a class="mbr-buttons__btn btn btn-lg btn-danger mbr-bold" href="https://res.cloudinary.com/uecare/image/upload/v1535645184/temp/okinawaKouriIslandtreasure01.jpg" style="font-size: 30px" >
+
+                    <select id="map" class="form-control form-control-lg" style="width: 50%;margin-right: 10px;">
+                        <option value="0" disabled selected>場所を選択してください</option>
+                        <option value="left">宮城島(3)</option>
+                        <option value="center">浮原島(5)</option>
+                        <option value="right">古宇利島(2)</option>
+                        <option value="23">安田島(7)</option>
+                        <option value="123" disabled>奧武島(0)</option>
+                    </select>
+
+                    <a id="btn" class="mbr-buttons__btn btn btn-lg btn-danger mbr-bold" href="https://res.cloudinary.com/uecare/image/upload/v1535645184/temp/okinawaKouriIslandtreasure01.jpg" style="display: none;font-size: 30px" >
                         New Map Release
                     </a>
                 </div>
             </div>
         </div>
     </div>
-
-
 </section>
+
+
 
 <section class="features1 cid-qwYHOWvXyr" id="features1-6" data-rv-view="6959">
 
@@ -358,3 +370,9 @@
 
 
 </body></html>
+<script>
+    $('#map').change(function () {
+            $('#btn').show();
+        }
+    );
+</script>
