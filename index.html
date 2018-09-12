@@ -76,7 +76,7 @@
                         <option value="123" disabled>奧武島(0)</option>
                     </select>
 
-                    <a id="btn" class="mbr-buttons__btn btn btn-lg btn-danger mbr-bold" href="https://res.cloudinary.com/uecare/image/upload/v1535645184/temp/okinawaKouriIslandtreasure01.jpg" style="display: none;font-size: 30px" >
+                    <a id="btn" target="_blank" class="mbr-buttons__btn btn btn-lg btn-danger mbr-bold" href="https://res.cloudinary.com/uecare/image/upload/v1535645184/temp/okinawaKouriIslandtreasure01.jpg" style="display: none;font-size: 30px" >
                         New Map Release
                     </a>
                 </div>
@@ -274,7 +274,7 @@
 
 
 
-<section class="mbr-section form1 cid-qxUKANvnc5" id="form1-f" data-rv-view="6979" style="background-color: #ffc146">
+<section id="istheremoresection" class="mbr-section form1 cid-qxUKANvnc5" id="form1-f" data-rv-view="6979" style="background-color: #ffc146;display:none;">
     <div class="container" style="">
         <div class="row justify-content-center">
             <div class="title col-12 col-lg-8">
@@ -291,8 +291,8 @@
 
 
 
-<section class="mbr-section content4 cid-qwYTGS06Eb" id="content4-9" data-rv-view="6965">
-    <div id="c" class="container" style="display: none; ">
+<section id="c" class="mbr-section content4 cid-qwYTGS06Eb" id="content410" data-rv-view="6965" style="display: none;">
+    <div  class="container">
         <div class="media-container-row">
             <div class="title col-12 col-md-8">
                 <h2 class="align-center pb-3 mbr-fonts-style display-2">
@@ -304,25 +304,27 @@
     </div>
 </section>
 
-<section class="cid-qwYSQ4CzZl" id="image1-8" data-rv-view="6967">
-    <figure id="a" class="mbr-figure container" style="display:none;">
+<section id="a" class="cid-qwYSQ4CzZl" id="image1-8" data-rv-view="6967" style="display:none;">
+    <figure  class="mbr-figure container" >
         <div class="image-block" style="width: 66%;">
             <img src="./Free HTML Bootstrap 4 Travel Template_files/alexandre-godreau-188906.jpg" width="1400" alt="Mobirise" title="" media-simple="true">
         </div>
     </figure>
 </section>
 
-<section class="cid-qwYSQ4CzZl" id="image1-8" data-rv-view="6967">
-    <figure id="d" class="mbr-figure container" style="display:none;">
+
+<section id="d" class="cid-qwYSQ4CzZl" id="image1-8" data-rv-view="6967" style="display:none;">
+    <figure  class="mbr-figure container" >
         <div class="image-block" style="width: 66%;">
             <img src="./Free HTML Bootstrap 4 Travel Template_files/alexandre-godreau-188906.jpg" width="1400" alt="Mobirise" title="" media-simple="true">
         </div>
     </figure>
 </section>
 
-<section class="features3 cid-qwYWjewzYp" id="features3-a" data-rv-view="6969">
 
-    <div id="b" class="container" style="display:none;">
+<section id="b" class="features3 cid-qwYWjewzYp" data-rv-view="6969" style="display:none;">
+
+    <div  class="container" >
         <div class="media-container-row">
             <div class="card p-3 col-12 col-md-6 col-lg-4">
                 <div class="card-wrapper">
@@ -402,7 +404,6 @@
     </div>
 </section>
 
-
   <script src="./Free HTML Bootstrap 4 Travel Template_files/jquery.min.js"></script>
   <script src="./Free HTML Bootstrap 4 Travel Template_files/tether.min.js"></script>
   <script src="./Free HTML Bootstrap 4 Travel Template_files/popper.min.js"></script>
@@ -413,8 +414,6 @@
   <script src="./Free HTML Bootstrap 4 Travel Template_files/jarallax.min.js"></script>
   <script src="./Free HTML Bootstrap 4 Travel Template_files/script.js"></script>
   <script src="./Free HTML Bootstrap 4 Travel Template_files/formoid.min.js"></script>
-
-
 
 </body></html>
 <script>
@@ -430,7 +429,9 @@
     })
 
     $('#map').change(function () {
-            $('#btn').show();
+            $('#btn').fadeIn();
+            $("#istheremoresection").fadeIn();
+        //TODO is there more show
         }
     );
 </script>
